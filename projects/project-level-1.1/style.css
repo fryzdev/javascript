@@ -1,0 +1,63 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.deck
+{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.deck .card
+{
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid rebeccapurple;
+    font-size: 2rem;
+}
+
+.deck .card.selected
+{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.options
+{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.options .btn
+{
+    box-sizing: border-box;
+    padding: 5px 10px;
+    box-shadow: 0 0 4px silver;
+    font-size: 0.9rem;
+    cursor: pointer;
+    user-select: none;
+}
